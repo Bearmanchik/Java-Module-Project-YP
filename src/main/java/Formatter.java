@@ -6,7 +6,7 @@ public class Formatter {
     void format(double formCost){
         cost = (int) formCost;
         if (cost > 100){
-            cost = cost%100;
+            cost = cost % 100;
         }
         if (cost > 20) {
             cost = cost % 10;
