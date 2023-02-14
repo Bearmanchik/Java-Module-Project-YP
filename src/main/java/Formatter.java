@@ -5,7 +5,12 @@ public class Formatter {
     }*/
     void format(double formCost){
         cost = (int) formCost;
-        cost = cost%10;
+        if (cost > 100){
+            cost = cost%100;
+        }
+        if (cost > 20) {
+            cost = cost % 10;
+        }
         switch (cost){
             case 1:
                 System.out.print("рубль.");
