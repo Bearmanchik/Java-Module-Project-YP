@@ -1,17 +1,15 @@
 public class Formatter {
-    int cost;
-  /*  Formatter (double formCost){
-        cost = formCost;
-    }*/
+    int format;
     void format(double formCost){
-        cost = (int) formCost;
-        if (cost > 100){
-            cost = cost % 100;
+
+        format = (int) formCost;
+        if (format > 100){
+            format = format % 100;
         }
-        if (cost > 20) {
-            cost = cost % 10;
+        if (format > 20) {
+            format = format % 10;
         }
-        switch (cost){
+        switch (format){
             case 1:
                 System.out.print("рубль.");
                 break;
